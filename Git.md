@@ -2,12 +2,12 @@
 - [Git 常用命令](#Git常用命令)
 - [放弃本地修改-将本地代码更新到目前远程仓库最新的代码状态](#放弃本地修改-将本地代码更新到目前远程仓库最新的代码状态)
 - [简单的放弃本地修改-还原到一开始的状态](#简单的放弃本地修改-还原到一开始的状态)
-- [查看本地分支对应的远程分支](#查看本地分支对应的远程分支)
 - [git强制push](#git强制push)
 - [git连接远程仓库](#git连接远程仓库)
 - [上传本地代码到远程仓库](#上传本地代码到远程仓库)
 - [git提交本地到一个子分支并合并子分支到另外一个父分支](#git提交本地到一个子分支并合并子分支到另外一个父分支)
 - [拉取远端分支到本地](#拉取远端分支到本地)
+- [git分支更新主干/主干更新分支](#分支更新主干)
 
 #### Git常用命令
 - git add -u ：提交所有tracked files 到暂存区
@@ -109,3 +109,15 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
     - 运行代码：git fetch [远端仓库名] [分支名]:[分支名]
     - eg:
         - git fetch origin master:master 
+
+### 分支更新主干
+- 拉取主干到分支
+    - git checkout master 
+    - git pull 
+    - git checkout dev
+    - git merge master 
+- 合并分支到主干
+    - git checkout dev
+    - git pull
+    - git checkout master
+    - git merge dev
