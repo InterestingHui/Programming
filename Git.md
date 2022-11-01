@@ -1,13 +1,14 @@
 # Git
-- [Git 常用命令](#Git常用命令)
+- [常用命令](#Git常用命令)
 - [放弃本地修改-将本地代码更新到目前远程仓库最新的代码状态](#放弃本地修改-将本地代码更新到目前远程仓库最新的代码状态)
 - [简单的放弃本地修改-还原到一开始的状态](#简单的放弃本地修改-还原到一开始的状态)
-- [git强制push](#git强制push)
-- [git连接远程仓库](#git连接远程仓库)
+- [强制push](#git强制push)
+- [连接远程仓库](#git连接远程仓库)
 - [上传本地代码到远程仓库](#上传本地代码到远程仓库)
-- [git提交本地到一个子分支并合并子分支到另外一个父分支](#git提交本地到一个子分支并合并子分支到另外一个父分支)
+- [提交本地到一个子分支并合并子分支到另外一个父分支](#git提交本地到一个子分支并合并子分支到另外一个父分支)
 - [拉取远端分支到本地](#拉取远端分支到本地)
 - [git分支更新主干/主干更新分支](#分支更新主干)
+- [更新fork仓库的master分支为源仓库的分支](#更新fork仓库的master分支为源仓库的分支)
 
 #### Git常用命令
 - git add -u ：提交所有tracked files 到暂存区
@@ -121,3 +122,14 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
     - git pull
     - git checkout master
     - git merge dev
+
+### 更新fork仓库的master分支为源仓库的分支
+- （如果还没添加源仓库）：git remote add upstream [源仓库ssh资源包]
+- （如果已经添加，找到源仓库的仓库名，这里假设取出为upstream）：git remote -v 
+- git fetch upstream
+- git checkout master
+- 此时到了本地的fork仓库的master分支
+- git merge upstream/master
+- 合并最新master
+- git push
+- 推到fork仓库，完成更新
