@@ -7,6 +7,7 @@
 - [git连接远程仓库](#git连接远程仓库)
 - [上传本地代码到远程仓库](#上传本地代码到远程仓库)
 - [git提交本地到一个子分支并合并子分支到另外一个父分支](#git提交本地到一个子分支并合并子分支到另外一个父分支)
+- [拉取远端分支到本地](#拉取远端分支到本地)
 
 #### Git常用命令
 - git add -u ：提交所有tracked files 到暂存区
@@ -98,3 +99,13 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 - git push origin [子分支] （注意这里就是在子分支）
 （这里如果push失败有可能是还得先pull 子分支的远端分支）
 
+### 拉取远端分支到本地
+- 如果本地还没拉取过该project的相关分支
+    - 运行代码：git clone -b [分支名] [ssh包链接]
+    - eg:
+        - git clone l00693105_from_master_US2022082100007 ssh://git@codehub-dg-g.huawei.com:2222/cis/obsd/dataplus/obs-oef/oef-framework.git
+- 已经拉取过该project的相关分支
+    - 切到该分支上  
+    - 运行代码：git fetch [远端仓库名] [分支名]:[分支名]
+    - eg:
+        - git fetch origin master:master 
