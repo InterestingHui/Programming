@@ -9,6 +9,7 @@
 - [拉取远端分支到本地](#拉取远端分支到本地)
 - [git分支更新主干/主干更新分支](#分支更新主干)
 - [更新fork仓库的master分支为源仓库的分支](#更新fork仓库的master分支为源仓库的分支)
+- [丢弃全部暂存区文件](#丢弃全部暂存区文件)
 
 #### Git常用命令
 - git add -u ：提交所有tracked files 到暂存区
@@ -133,3 +134,7 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 - 合并最新master
 - git push
 - 推到fork仓库，完成更新
+
+### 丢弃全部暂存区文件
+- git clean -dfx
+- git checkout .
