@@ -11,6 +11,7 @@
 - [更新fork仓库的master分支为源仓库的分支](#更新fork仓库的master分支为源仓库的分支)
 - [丢弃全部暂存区文件](#丢弃全部暂存区文件)
 - [git里commit的时候-m描述写错了修改描述信息](#git里commit的时候-m描述写错了修改描述信息)
+- [git merge解决冲突](#merge解决冲突)
 
 #### Git常用命令
 - git add -u ：提交所有tracked files 到暂存区
@@ -142,3 +143,8 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 
 ### git里commit的时候-m描述写错了修改描述信息
 - https://blog.csdn.net/kaimo313/article/details/107942861
+
+### merge解决冲突
+- 通过Jetbrain IDE进行冲突解决，点击左上角Commit，再点击resovle confict，进行冲突解决
+- 解决完成后，输入git commit，注意这次就没有-m 描述信息了，但是输入完后要在第一行新增单号
+- 再git push
