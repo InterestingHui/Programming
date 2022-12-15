@@ -52,7 +52,7 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 ### 放弃分支的本地修改-将本地代码更新到目前远程仓库最新的代码状态
 - git fetch origin master
 - git reset --hard origin/master
-- git pull
+- git push -f
 
 ### git连接远程仓库
 - 方法1：手动添加远程分支并命名
