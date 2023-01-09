@@ -58,6 +58,7 @@ sheet['A1'].value='1111111'
 ```python
 print(now[1][0].value)#打印第一行第一列的内容
 print(now[1][1].value)#打印第一行第二列的内容
+print(now.cell(1,2).value)#打印第一行第二列的内容
 ```
 
 #### 字体样式
