@@ -147,3 +147,7 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 - 通过Jetbrain IDE进行冲突解决，点击左上角Commit，再点击resovle confict，进行冲突解决
 - 解决完成后，输入git commit，注意这次就没有-m 描述信息了，但是输入完后要在第一行新增单号
 - 再git push
+
+### 回退
+- git reset --hard HEAD^ 回退到上一个版本
+- git reset --hard HEAD~3 回退到历史倒数第三个版本
