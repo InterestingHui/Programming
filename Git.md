@@ -151,3 +151,4 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 ### 回退
 - git reset --hard HEAD^ 回退到上一个版本
 - git reset --hard HEAD~3 回退到历史倒数第三个版本
+- git checkout commit [id]回退到指定版本
