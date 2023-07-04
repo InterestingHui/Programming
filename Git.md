@@ -54,6 +54,14 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 - git reset --hard origin/master
 - git push -f
 
+### 同上，放弃本地修改，将本地master分支完全与主仓master反之一致
+- git fetch origin master
+- git reset --hard upstream/master
+- git push -f
+    - 注：如果遇到“ ! [remote rejected]     master -> master (pre-receive hook declined)”的问题，说明该分支还是保护分支，要到设置里去修改：
+    - ![image](https://github.com/InterestingHui/Programming/assets/45201681/f61ae064-dd0d-48ad-aca5-84e431090eda)
+
+
 ### git连接远程仓库
 - 方法1：手动添加远程分支并命名
 - 先在一个文件夹里右键打开git bash
