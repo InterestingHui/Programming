@@ -11,7 +11,7 @@
 - [丢弃全部暂存区文件](#丢弃全部暂存区文件)
 - [git里commit的时候-m描述写错了修改描述信息](#git里commit的时候-m描述写错了修改描述信息)
 - [git merge解决冲突](#merge解决冲突)
-- [将本地master分支完全与主仓(源仓)master一致](#将本地master分支完全与主仓(源仓)master一致)
+- [将本地master分支回退为完全与主（源）仓master一致](#将本地master分支回退为完全与主仓master一致)
 
 #### Git常用命令
 - git add -u ：提交所有tracked files 到暂存区
@@ -55,7 +55,7 @@ error: failed to push some refs to 'ssh://isource-dg.huawei.com:2222/l30007627/C
 - git reset --hard origin/master
 - git push -f
 
-### 将本地master分支完全与主仓(源仓)master一致
+### 将本地master分支回退为完全与主仓master一致
 - git fetch origin master
 - git reset --hard upstream/master
 - git push -f
