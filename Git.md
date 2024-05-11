@@ -17,6 +17,8 @@
 - git add -u ：提交所有tracked files 到暂存区
 - git add . ：提交所有tracked files 和 untracked files 到暂存区
 - git remote -v ：显示所有远程仓库
+    - git remote rm origin : 删除远程仓库
+    - git remote add [origin] [url] : 添加远程仓库
 - **git pull**
     - 将远程主机 origin 的 master 分支拉取过来，与本地的 brantest 分支合并：git pull origin master:brantest
     - 如果远程分支是与当前分支合并，则冒号后面的部分可以省略：git pull origin master
@@ -26,6 +28,7 @@
     - git push origin [branch_name]
     - git push -f origin br_MXJ_nmm:br_ruu_nmm_mxj：git强制push
     - 一个罕见的难以解决的错误：
+
 ```
 remote: Start Binary Checking for Branch 'br_Q2Rest' by Rule 'Default Setting'  [FAILED]
 remote: Error: Binary file 'deployment/SMP/diagnose/1.xml.cms' is forbidden
